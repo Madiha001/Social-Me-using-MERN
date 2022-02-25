@@ -1,6 +1,8 @@
+import Home from './pages/home/Home';
+
 function App() {
   return (
-    <div>hello react</div>
+    <Home/>
   );
 }
 
