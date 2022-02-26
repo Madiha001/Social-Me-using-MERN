@@ -1,5 +1,5 @@
 import './post.css';
-import {MoreVert} from '@material-ui/icons';
+import { FiMoreVertical } from 'react-icons/fi';
 import { Users } from '../../data';
 import { useState } from "react";
 
@@ -25,7 +25,7 @@ function Post({post}) {
                         <span className="postDate">{post.date}</span>
                     </div>
                     <div className="postTopRight">
-                        <MoreVert />
+                        <FiMoreVertical />
                     </div>
                 </div>
                 <div className="postCenter">
