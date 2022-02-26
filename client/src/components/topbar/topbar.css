@@ -1,0 +1,90 @@
+.tbContainer{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(5, 155, 155);
+    display:flex;   
+    align-items: center;
+    position:sticky;
+    top: 0; 
+}
+.tbLeft{
+    flex: 3;
+    
+}
+.tbCenter{
+    flex: 5;
+    
+}
+.tbRight{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+}
+.tbLink{
+    margin-right:10px ;
+    font-size: 14px;
+    cursor: pointer;
+}
+.tbIcons{
+    display: flex;
+
+
+}
+.tbIconItem{
+    margin-right: 15px;
+    cursor:pointer;
+    position:relative;
+
+}
+.tbIconBadge{
+    width:12px;
+    height: 12px;
+    background-color: rgb(121, 45, 104);
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+
+}
+.tbimage{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.logo{
+    font-size: 24px;
+    margin-left:20px;
+    font-weight: bold;
+    color:white;
+    cursor:pointer;
+}
+
+.tbsearch {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex  ;
+    align-items: center;
+}
+.sIcon{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.inputSearch{
+    border: none;
+    width: 70%;
+
+}
+.inputSearch:focus{
+    outline: none ;
+}
