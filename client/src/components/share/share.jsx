@@ -6,26 +6,26 @@ function Share() {
         <div className='share'>
            <div className='shareCover'>
                 <div className='shareTop'>
-                    <img className='shareProfilePic' src="/assets/person/1.jpeg" alt="" />
-                    <input placeholder="What's on your mind?" className='shareInput'/>
-                    <hr className="shareHr"/>
+                    <img className='shareProfilePic' src="/icons/person/1.jpeg" alt="" />
+                    <input placeholder="What's on your mind?" className='shareInput'/>    
                 </div>
+                <hr className="shareHr"/>
                 <div className='shareBottom'>
                     <div className="shareOptions">
                         <div className="shareOption">
-                            <MdPermMedia className="shareMediaIcon" htmlColor="tomato"/>
+                            <MdPermMedia className="shareMediaIcon" id="iconMedia"/>
                             <span className='shareOptionContent'>Photo or Video</span>
                         </div>
                         <div className="shareOption">
-                            <MdLabel className="shareMediaIcon" htmlColor="blue"/>
+                            <MdLabel className="shareMediaIcon" id="iconLabel"/>
                             <span className='shareOptionContent'>Tag</span>
                         </div>
                         <div className="shareOption">
-                            <MdRoom className="shareMediaIcon" htmlColor="green"/>
+                            <MdRoom className="shareMediaIcon" id="iconRoom"/>
                             <span className='shareOptionContent'>Location</span>
                         </div>
                         <div className="shareOption">
-                            <MdEmojiEmotions className="shareMediaIcon" htmlColor="goldenrod"/>
+                            <MdEmojiEmotions className="shareMediaIcon" id="iconEmoji"/>
                             <span className='shareOptionContent'>Feelings</span>
                         </div>
                     </div>

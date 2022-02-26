@@ -27,12 +27,12 @@
     border: none;
     width: 80%;
 }
-.shareInput :focus{
+.shareInput:focus{
     outline: none;
 }
 
 .shareHr{
-    margin-right: 20px;
+    margin: 20px;
 }
 
 .shareBottom{
@@ -67,9 +67,25 @@
     border: none;
     padding: 7px;
     border-radius: 5px;
-    background-color: green;
+    background-color: cornflowerblue;
     font-weight: 500;
     margin-right: 20px;
     cursor: pointer;
     color: white;
+}
+
+#iconMedia{
+    color: rgb(181, 77, 219);
+}
+
+#iconLabel{
+    color: rgb(128, 239, 222);
+}
+
+#iconRoom{
+    color: rgb(106, 109, 175);
+}
+
+#iconEmoji{
+    color: rgb(246, 194, 69);
 }

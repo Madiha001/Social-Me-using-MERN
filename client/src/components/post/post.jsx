@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function Post({post}) {
 
-    const [like, setLike] = useState(post.likes); 
+    const [like, setLike] = useState(post.like); 
     const [isLiked, setIsLiked] = useState(false);
 
     const likeHandler = () => {
@@ -18,9 +18,9 @@ function Post({post}) {
             <div className="postCover">
                 <div className="postTop">
                     <div className="postTopLeft">
-                        <img className='postProfilePic' src={Users.filter( u=> u.id === post?.userId[0].profilePicture)} alt="" />
+                        <img className='postProfilePic' src={Users.filter((u) => u.id === post?.userId)[0].profilePicture} alt="" />
                         <span className="postUsername">
-                            {Users.filter( u=> u.id === post?.userId[0].username)}
+                            {Users.filter((u) => u.id === post?.userId)[0].username}
                         </span>
                         <span className="postDate">{post.date}</span>
                     </div>
@@ -34,8 +34,8 @@ function Post({post}) {
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
-                        <img className='postLikeIcon' src="/assets/like.png" onClick={likeHandler} alt="" />
-                        <img className='postLikeIcon' src="/assets/heart.png" onClick={likeHandler} alt="" />
+                        <img className='postLikeIcon' src="/icons/like.png" onClick={likeHandler} alt="" />
+                        <img className='postLikeIcon' src="/icons/heart.png" onClick={likeHandler} alt="" />
                         <span className="postLikeCount">{like} people like this</span>
                     </div>
                     <div className="postBottomRight">
