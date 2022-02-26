@@ -1,3 +1,68 @@
 .rightbar{
     flex: 4;
 }
+.rbWrapper{
+    padding: 20px 20px 0 0 ;
+
+
+}
+.bdayImg{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+
+}
+.bdayMsg{
+    font-weight: 300;
+    font-size: 15px;
+}
+.rbHeading{
+   margin-bottom: 20px;
+
+}
+.bdayContainer{
+    display: flex;
+    align-items: center;
+}
+.rbAd{
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px;
+
+}
+.rbFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.rbFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.rbProfileImgContainer{
+    margin-right: 10px;
+    position: relative;
+}
+.rbProfileImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover ;
+}
+.rbOnline{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;   
+    top:-2px;
+    right:0;
+    border: 2px solid white;
+
+}
+.rbUser{
+
+}
+
