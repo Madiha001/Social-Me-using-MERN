@@ -1,5 +1,53 @@
 .sidebar{
     flex: 3;
      height:calc(100vh-50px);
-     background-color: rgb(201, 124, 124);
+    
+}
+.sbWrapper{
+padding: 20px;
+}
+
+.sbList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.sbListItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.sbicon{
+    margin-right: 15px ;
+}
+.sbButton{
+    width:150px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sidebarHr{
+    margin: 20px 0;
+    
+}
+.sbFriendList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sbFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.sbFriendImg{
+    width: 32px;
+    height: 32px;
+    border-radius:50% ;
+    object-fit: cover;
+    margin-right: 10px;
 }
