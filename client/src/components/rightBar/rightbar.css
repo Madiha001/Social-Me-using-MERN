@@ -1,11 +1,12 @@
 .rightbar{
     flex: 4;
+    margin-left: 20px;
 }
 .rbWrapper{
     padding: 20px 20px 0 0 ;
-
-
 }
+
+
 .bdayImg{
     width: 40px;
     height: 40px;

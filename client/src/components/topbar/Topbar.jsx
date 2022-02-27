@@ -6,7 +6,7 @@ export default function Topbar(){
     return(
         <div className="tbContainer">
             <div className="tbLeft">
-                <span className="logo">SocialApp</span>
+                <span className="logo">Sₒ𝚌ᵢₐᄂMₑ</span>
             </div>
             <div className="tbCenter">
                 <span className="tbsearch">

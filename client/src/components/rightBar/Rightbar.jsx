@@ -40,7 +40,7 @@ export default function Rightbar({profile}){
                     <span className="rbInfoValue">Single</span>
                 </div>
             </div>
-            <h4 className='rbHeading'>User friends</h4>
+            <h4 className='rbHeading'>Friends</h4>
             <div className="rbFollowings">
                 <div className="rbFollowing">
                     <img src="icons/person/1.jpeg" alt="" className="rbFollowingImg" /> 
@@ -56,6 +56,10 @@ export default function Rightbar({profile}){
                 </div>
                 <div className="rbFollowing">
                     <img src="icons/person/4.jpeg" alt="" className="rbFollowingImg" /> 
+                    <span className="rbFollowingName">Naneeta</span>
+                </div>
+                <div className="rbFollowing">
+                    <img src="icons/person/5.jpeg" alt="" className="rbFollowingImg" /> 
                     <span className="rbFollowingName">Naneeta</span>
                 </div>
                 <div className="rbFollowing">
