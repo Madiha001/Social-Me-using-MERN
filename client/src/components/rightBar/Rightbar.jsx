@@ -1,6 +1,6 @@
 import './rightbar.css';
 import {Users} from "../../data";
-import Online from "../online/Online";
+import Online from "../online/online";
 
 export default function Rightbar({profile}){
     const HomeRightbar=()=>{
@@ -9,7 +9,7 @@ export default function Rightbar({profile}){
             <div className="bdayContainer">
                     <img className='bdayImg' src="icons/gift.png" alt="" />
                     <span className="bdayMsg">
-                        <b>A </b> and <b>2other friends</b> have birthday today
+                        <b>A </b> and <b>2 other friends</b> have birthday today
                     </span>
                 </div>
                 <img className="rbAd" src="icons/ad.png" alt="" />
@@ -69,7 +69,7 @@ export default function Rightbar({profile}){
     return(
         <div className='rightbar'>
             <div className="rbWrapper">
-                <ProfileRightbar/>
+                {profile? <ProfileRightbar /> : <HomeRightbar />}
             </div>
         </div>
     )

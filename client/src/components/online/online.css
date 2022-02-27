@@ -1,0 +1,32 @@
+.rbFriend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .rbProfileImgContainer {
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .rbProfileImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .rbOnline{
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: limegreen;
+      position: absolute;
+      top: -2px;
+      right: 0;
+      border: 2px solid white;
+  }
+  
+  .rbUserName{
+      font-weight: 500;
+  }

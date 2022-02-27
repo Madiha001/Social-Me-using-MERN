@@ -1,0 +1,73 @@
+.register{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rWrap{
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+.rLeft,.rRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rLogo{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(5, 155, 155);
+    margin-bottom: 10px;
+}
+.rDescription{
+    font-size: 20px;
+}
+.rBox{
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rInput{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.rInput:focus{
+    overflow: none;
+}
+.rButton{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(5, 155, 155);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.rForgot{
+    color: rgb(5, 155, 155);
+    text-align: center;
+}
+.RegButton{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(62, 104, 168);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+}

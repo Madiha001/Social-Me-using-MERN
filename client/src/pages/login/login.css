@@ -1,0 +1,73 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lWrap{
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+.lLeft,.lRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lLogo{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(5, 155, 155);
+    margin-bottom: 10px;
+}
+.lDescription{
+    font-size: 20px;
+}
+.lBox{
+    height: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lInput{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.lInput:focus{
+    overflow: none;
+}
+.lButton{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(5, 155, 155);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.lForgot{
+    color: rgb(5, 155, 155);
+    text-align: center;
+}
+.lRegButton{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(62, 104, 168);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+}

@@ -4,7 +4,7 @@ import {AiOutlineQuestionCircle} from 'react-icons/ai';
 import {FaGraduationCap} from 'react-icons/fa';
 import {MdWorkOutline, MdCalendarToday} from 'react-icons/md';
 import {Users} from '../../data';
-import CloseFriend from '../../components/closeFriend/CloseFriend';
+import Friend from '../../components/friend/friend';
 
 
 
@@ -54,7 +54,7 @@ export default function Sidebar(){
                 <hr className='sidebarHr'/>
                 <ul className="sbFriendList">
                     {Users.map(u=>(
-                        <CloseFriend key={u.id} user={u}/>
+                        <Friend key={u.id} user={u}/>
                     ))}
                 </ul>
                     
