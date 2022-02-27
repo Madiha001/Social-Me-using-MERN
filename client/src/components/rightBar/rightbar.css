@@ -17,7 +17,9 @@
     font-size: 15px;
 }
 .rbHeading{
-   margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+   margin-bottom: 10px;
 
 }
 .bdayContainer{
@@ -63,6 +65,37 @@
 
 }
 .rbUser{
+    font-weight: 500;
+}
+.rbFollowingImg{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.rbInfo{
+    margin-bottom: 30px;
 
 }
-
+.rbInfoItem{
+    margin-bottom: 10px;
+}
+.rbInfoKey{
+    font-weight: 500;
+    margin-right: 15px;
+    color: #555;
+}
+.rbInfoValue{
+    font-weight: 300;
+}
+.rbFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rbFollowing{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;
+}

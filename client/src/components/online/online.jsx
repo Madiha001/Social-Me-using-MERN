@@ -1,15 +1,14 @@
 import './online.css';
 
-function Online() {
+function Online({user}){
     return (
-        <li className="rightbarFriend">
-        <div className="rightbarProfileImgContainer">
-            <img className="rightbarProfileImg" src={user.profilePicture} alt="" />
-            <span className="rightbarOnline"></span>
-        </div>
-        <span className="rightbarUsername">{user.username}</span>
+        <li className='rbFriend'>
+            <div className="rbProfileImgContainer">
+                <img src={user.profilePicture} alt="" className="rbProfileImg" />
+                <span className="rbOnline"></span>
+            </div>
+            <span className="rbUser">{user.username}</span>
         </li>
-    );
+    )
 }
-
 export default Online;

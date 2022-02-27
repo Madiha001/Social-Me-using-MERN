@@ -3,6 +3,8 @@ import {MdRssFeed, MdMessage,MdOutlineSlowMotionVideo, MdGroups, MdBookmarks} fr
 import {AiOutlineQuestionCircle} from 'react-icons/ai';
 import {FaGraduationCap} from 'react-icons/fa';
 import {MdWorkOutline, MdCalendarToday} from 'react-icons/md';
+import {Users} from '../../data';
+import CloseFriend from '../../components/closeFriend/CloseFriend';
 
 
 
@@ -51,42 +53,9 @@ export default function Sidebar(){
                 <button className='sbButton'>Show More</button>
                 <hr className='sidebarHr'/>
                 <ul className="sbFriendList">
-                    <li className="sbFriend">
-                        <img className="sbFriendImg" src="/icons/person/2.jpeg" alt="" />
-                        <span className="sbFriendName">Naneeta</span>
-                    </li>
-                    <li className="sbFriend">
-                        <img className="sbFriendImg" src="/icons/person/2.jpeg" alt="" />
-                        <span className="sbFriendName">Naneeta</span>
-                    </li>
-                    <li className="sbFriend">
-                        <img className="sbFriendImg" src="/icons/person/2.jpeg" alt="" />
-                        <span className="sbFriendName">Naneeta</span>
-                    </li>
-                    <li className="sbFriend">
-                        <img className="sbFriendImg" src="/icons/person/2.jpeg" alt="" />
-                        <span className="sbFriendName">Naneeta</span>
-                    </li>
-                    <li className="sbFriend">
-                        <img className="sbFriendImg" src="/icons/person/2.jpeg" alt="" />
-                        <span className="sbFriendName">Naneeta</span>
-                    </li>
-                    <li className="sbFriend">
-                        <img className="sbFriendImg" src="/icons/person/2.jpeg" alt="" />
-                        <span className="sbFriendName">Naneeta</span>
-                    </li> 
-                    <li className="sbFriend">
-                        <img className="sbFriendImg" src="/icons/person/2.jpeg" alt="" />
-                        <span className="sbFriendName">Naneeta</span>
-                    </li> 
-                    <li className="sbFriend">
-                        <img className="sbFriendImg" src="/icons/person/2.jpeg" alt="" />
-                        <span className="sbFriendName">Naneeta</span>
-                    </li> 
-                    <li className="sbFriend">
-                        <img className="sbFriendImg" src="/icons/person/2.jpeg" alt="" />
-                        <span className="sbFriendName">Naneeta</span>
-                    </li>
+                    {Users.map(u=>(
+                        <CloseFriend key={u.id} user={u}/>
+                    ))}
                 </ul>
                     
             </div>
