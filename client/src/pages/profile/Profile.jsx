@@ -9,12 +9,13 @@ export default function Profile(){
         <>
         <Topbar/>
         <div className="profile">
-        <Sidebar/>
+        <Rightbar profile/>
+        
         <div className='profileRight'>
             <div className="profileRt">
                 <div className="profileCover">
                 <img className='profileCoverImg' src="icons/post/3.jpeg" alt="" />
-                <img className='profileUserImg' src="icons/post/7.jpeg" alt="" />
+                <img className='profileUserImg' src="icons/person/1.jpeg" alt="" />
                 </div>
                 <div className="profileInfo">
                     <h4 className='profileInfoName'>Naneeta</h4>
@@ -23,7 +24,7 @@ export default function Profile(){
             </div>
             <div className="profileRb">
         <Feed/>
-        <Rightbar profile/>
+        <Sidebar/>
         </div>
         </div>
         </div>

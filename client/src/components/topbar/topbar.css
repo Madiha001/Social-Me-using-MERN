@@ -26,7 +26,7 @@
 }
 .tbLink{
     margin-right:10px ;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
 }
 .tbIcons{
@@ -62,7 +62,7 @@
     cursor: pointer;
 }
 .logo{
-    font-size: 24px;
+    font-size: 30px;
     margin-left:20px;
     font-weight: bold;
     color:white;
