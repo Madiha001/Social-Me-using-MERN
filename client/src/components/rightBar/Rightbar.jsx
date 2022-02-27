@@ -12,7 +12,7 @@ export default function Rightbar({profile}){
                         <b>A </b> and <b>2 other friends</b> have birthday today
                     </span>
                 </div>
-                <img className="rbAd" src="icons/ad.png" alt="" />
+                <img className="rbAd" src="icons/ad.jpg" alt="" />
                 <h4 className='rbHeading'>Online Friends</h4>
                 <ul className="rbFriendList">
                     {Users.map((u)=>(
