@@ -5,7 +5,7 @@ function Login(props) {
         <div className='login'>
             <div className="lWrap">
                 <div className="lLeft">
-                    <h3 className="lLogo">Facebook Like App</h3>
+                    <h3 className="lLogo">Sₒ𝚌ᵢₐᄂMₑ</h3>
                     <span className="lDescription">Facebook Like App let's you connect with your friends and the whole world</span>
                 </div>
                 <div className="lRight">

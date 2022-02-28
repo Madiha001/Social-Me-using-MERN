@@ -5,7 +5,7 @@ function Register() {
     <div className="register">
       <div className="rWrap">
         <div className="rLeft">
-          <h3 className="rLogo">Facebook Like App</h3>
+          <h3 className="rLogo">Sₒ𝚌ᵢₐᄂMₑ</h3>
           <span className="rDescription">Facebook Like App let's you connect with your friends and the whole world</span>
         </div>
         <div className="rRight">
