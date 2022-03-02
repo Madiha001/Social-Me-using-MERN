@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const morgan = require("morgan");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
+const postRoute = require("./routes/posts");
 
 dotenv.config();
 mongoose.connect(process.env.MONGO_URL, () => {
@@ -18,6 +19,7 @@ app.use(morgan("common"));
 
 app.use("/server/users" , userRoute);
 app.use("/server/auth" , authRoute);
+app.use("/server/posts" , postRoute);
 
 app.listen(8800,() =>{
     console.log("Backend server is running!!!")
