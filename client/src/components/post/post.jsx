@@ -4,7 +4,9 @@ import { useState } from "react";
 import {format} from "timeago.js"
 function Post({post}) {
 
-    const [like, setLike] = useState(post.likes.length); 
+    const [like, setLike] = useState(post.likes.length);
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
     const [isLiked, setIsLiked] = useState(false);
     const [user, setUser] = useState({})
 
@@ -38,12 +40,14 @@ function Post({post}) {
                 </div>
                 <div className="postCenter">
                     <span className="postContent">{post?.desc}</span>
+
                     <img className='postImg' src={PF+post.img} alt="" />
+
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
-                        <img className='postLikeIcon' src="/icons/like.png" onClick={likeHandler} alt="" />
-                        <img className='postLikeIcon' src="/icons/heart.png" onClick={likeHandler} alt="" />
+                        <img className='postLikeIcon' src={`${PF}like.png`} onClick={likeHandler} alt="" />
+                        <img className='postLikeIcon' src={`${PF}heart.png`} onClick={likeHandler} alt="" />
                         <span className="postLikeCount">{like} people like this</span>
                     </div>
                     <div className="postBottomRight">
