@@ -1,12 +1,16 @@
 import "./topbar.css";
 import { AiOutlineSearch, AiOutlineWechat } from 'react-icons/ai';
 import {MdNotifications, MdPerson} from 'react-icons/md';
+import {Link} from 'react-router-dom';
 
 export default function Topbar(){
     return(
         <div className="tbContainer">
             <div className="tbLeft">
-                <span className="logo">Sₒ𝚌ᵢₐᄂMₑ</span>
+                <Link to="/" style={{textDecoration:"none"}}> 
+                    <span className="logo">Sₒ𝚌ᵢₐᄂMₑ</span>
+                </Link>
+                
             </div>
             <div className="tbCenter">
                 <span className="tbsearch">

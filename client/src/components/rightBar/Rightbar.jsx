@@ -4,15 +4,16 @@ import Online from "../online/online";
 
 export default function Rightbar({profile}){
     const HomeRightbar=()=>{
+        const PF = process.env.REACT_APP_PUBLIC_FOLDER;
         return(
             <>
             <div className="bdayContainer">
-                    <img className='bdayImg' src="icons/gift.png" alt="" />
+                    <img className='bdayImg' src="gift.png" alt="" />
                     <span className="bdayMsg">
                         <b>A </b> and <b>2 other friends</b> have birthday today
                     </span>
                 </div>
-                <img className="rbAd" src="icons/ad.jpg" alt="" />
+                <img className="rbAd" src="ad.jpg" alt="" />
                 <h4 className='rbHeading'>Online Friends</h4>
                 <ul className="rbFriendList">
                     {Users.map((u)=>(
@@ -23,6 +24,7 @@ export default function Rightbar({profile}){
         );
     };
     const ProfileRightbar= ()=>{
+        const PF = process.env.REACT_APP_PUBLIC_FOLDER;
         return (
             <>
             <h4 className='rbHeading'> User Information</h4>
@@ -43,27 +45,27 @@ export default function Rightbar({profile}){
             <h4 className='rbHeading'>Friends</h4>
             <div className="rbFollowings">
                 <div className="rbFollowing">
-                    <img src="icons/person/1.jpeg" alt="" className="rbFollowingImg" /> 
+                    <img src= {`${PF}person/1.jpeg`} alt="" className="rbFollowingImg" /> 
                     <span className="rbFollowingName">Naneeta</span>
                 </div>
                 <div className="rbFollowing">
-                    <img src="icons/person/2.jpeg" alt="" className="rbFollowingImg" /> 
+                    <img src={`${PF}person/2.jpeg`} alt="" className="rbFollowingImg" /> 
                     <span className="rbFollowingName">Naneeta</span>
                 </div>
                 <div className="rbFollowing">
-                    <img src="icons/person/3.jpeg" alt="" className="rbFollowingImg" /> 
+                    <img src={`${PF}person/3.jpeg`} alt="" className="rbFollowingImg" /> 
                     <span className="rbFollowingName">Naneeta</span>
                 </div>
                 <div className="rbFollowing">
-                    <img src="icons/person/4.jpeg" alt="" className="rbFollowingImg" /> 
+                    <img src={`${PF}person/4.jpeg`} alt="" className="rbFollowingImg" /> 
                     <span className="rbFollowingName">Naneeta</span>
                 </div>
                 <div className="rbFollowing">
-                    <img src="icons/person/5.jpeg" alt="" className="rbFollowingImg" /> 
+                    <img src={`${PF}person/5.jpeg`} alt="" className="rbFollowingImg" /> 
                     <span className="rbFollowingName">Naneeta</span>
                 </div>
                 <div className="rbFollowing">
-                    <img src="icons/person/5.jpeg" alt="" className="rbFollowingImg" /> 
+                    <img src={`${PF}person/6.jpeg`} alt="" className="rbFollowingImg" /> 
                     <span className="rbFollowingName">Naneeta</span>
                 </div>
             </div>
