@@ -2,7 +2,7 @@ import './rightbar.css';
 import {Users} from "../../data";
 import Online from "../online/online";
 
-export default function Rightbar({profile}){
+export default function Rightbar({user}){
     const HomeRightbar=()=>{
         const PF = process.env.REACT_APP_PUBLIC_FOLDER;
         return(
@@ -23,7 +23,7 @@ export default function Rightbar({profile}){
             </>
         );
     };
-    const ProfileRightbar= ()=>{
+    const ProfileRightbar= ({user})=>{
         const PF = process.env.REACT_APP_PUBLIC_FOLDER;
         return (
             <>
@@ -31,15 +31,21 @@ export default function Rightbar({profile}){
             <div className="rbInfo">
                 <div className="rbInfoItem">
                     <span className="rbInfoKey">City:</span>
-                    <span className="rbInfoValue">New York</span>
+                    <span className="rbInfoValue">{user?.city}</span>
                 </div>
                 <div className="rbInfoItem">
                     <span className="rbInfoKey">From:</span>
-                    <span className="rbInfoValue">Madrid</span>
+                    <span className="rbInfoValue">{user?.from}</span>
                 </div>
                 <div className="rbInfoItem">
                     <span className="rbInfoKey">Relationship:</span>
-                    <span className="rbInfoValue">Single</span>
+                    <span className="rbInfoValue">
+                        {user?.relationship === 1
+                            ? "Single"
+                            : user?.relationship === 1
+                            ? "Married"
+                            : "-"}
+                    </span>
                 </div>
             </div>
             <h4 className='rbHeading'>Friends</h4>
@@ -75,7 +81,7 @@ export default function Rightbar({profile}){
     return(
         <div className='rightbar'>
             <div className="rbWrapper">
-                {profile? <ProfileRightbar /> : <HomeRightbar />}
+                {user? <ProfileRightbar /> : <HomeRightbar />}
             </div>
         </div>
     )

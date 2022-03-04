@@ -6,25 +6,25 @@ import { useState } from 'react';
 import axios from "axios";
 
 
-export default function Feed(){
+export default function Feed({username}){
     const [posts,setPosts] = useState([]);
-    const [text,setText] = useState("");
 
     useEffect(()=>{
         const fetchPosts = async ()=>{
-            const res = await axios.get("posts/timeline/621c87c32e7fe4f90981a256");
-            setPosts(  res.data)
+            const res = username 
+            ? await axios.get("/posts/profile/" + username)
+            : await axios.get("/posts/timeline/621c90213efab6f4be8099d1");
+            setPosts(res.data)
         };
         fetchPosts();
-    },[]);
+    },[username]);
     return(
         <div className='feed'>
-            <input type="text" onChange={e=>setText(e.target.value)}/>
                 <div className="fdWrapper">
                 <Share />
-                {/*Posts.map((p) => (
+                {posts.map((p) => (
                 <Post key={p._id} post={p} />
-                ))*/}
+                ))}
             </div>
         </div>
     )

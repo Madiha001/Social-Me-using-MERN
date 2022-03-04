@@ -1,7 +1,10 @@
 import './post.css';
 import { FiMoreVertical } from 'react-icons/fi';
-import { useState } from "react";
-import {format} from "timeago.js"
+import { useState, useEffect } from "react";
+import {format} from "timeago.js";
+import axios from "axios";
+import {Link } from "react-router-dom";
+
 function Post({post}) {
 
     const [like, setLike] = useState(post.likes.length);
@@ -12,8 +15,8 @@ function Post({post}) {
 
     useEffect(()=>{
         const fetchUser = async ()=>{
-            const res = await axios.get(`users/${post.userId}`);
-            setUser( res.data)
+            const res = await axios.get(`/users?userId=${post.userId}`);
+            setUser( res.data);
         };
         fetchUser();
     },[post.userId]);
@@ -28,7 +31,9 @@ function Post({post}) {
             <div className="postCover">
                 <div className="postTop">
                     <div className="postTopLeft">
-                        <img className='postProfilePic' src={user.profilePicture || PF +"person/noAvatar.png"} alt="" />
+                        <Link to={`profile/${user.username}`}>
+                            <img className='postProfilePic' src={user.profilePic || PF +"noAvatar.png"} alt="" />
+                        </Link>  
                         <span className="postUsername">
                             {user.username}
                         </span>
