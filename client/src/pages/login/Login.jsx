@@ -11,10 +11,12 @@ function Login(props) {
     const {user,isFetching, error, dispatch} = useContext(AuthContext);
     const handleClick = (e) => {
         e.preventDefault();
+   
         loginCall(
           { email: email.current.value, password: password.current.value },
           dispatch
         );
+        console.log("Naneeta")
     };
     console.log(user);
     return (
@@ -28,9 +30,15 @@ function Login(props) {
                     <form className="lBox" onSubmit={handleClick}>
                         <input placeholder='Email' type="email" required className="lInput" ref={email} />
                         <input placeholder='Password' type="password"  required minLength="8" className="lInput" ref={password} />
-                        <button className="lButton">{isFetching ? <CircularProgress color="white" size="20px"/>:"Log In"}</button>
+                        <button className="lButton" type="submit" disabled={isFetching}>{isFetching ?( <CircularProgress color="white" size="20px"/>)
+                        :("Log In")}
+                        </button>
                         <span className="lForgot">Forgot Password?</span>
-                        <button className="lRegButton">{isFetching ? <CircularProgress color="white" size="20px"/>:"Create a New Account"}</button>
+                        <button className="lRegButton">{isFetching ? (<CircularProgress color="white" size="20px"/>)
+                        :(
+                            "Create a New Account"
+                        )}
+                            </button>
                     </form>
                 </div>
             </div>

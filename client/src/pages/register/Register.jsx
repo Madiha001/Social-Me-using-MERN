@@ -1,6 +1,37 @@
 import "./register.css";
+import {useRef} from 'react'
+import axios from "axios";
+import {useNavigate} from 'react-router-dom'
 
 function Register() {
+  const username = useRef();
+  const email = useRef();
+  const password = useRef();
+  const passwordAgain = useRef();
+  const history = useNavigate();
+
+  const handleClick = async (e) => {
+    e.preventDefault();
+    if(passwordAgain.current.value !== password.current.value){
+      passwordAgain.current.setCustomValidity("Passwords dont match");
+    }
+    else{
+      const user = {
+        username : username.current.value ,
+        email : email.current.value ,
+        password : password.current.value ,
+      };
+      try{
+         await axios.post("/auth/register" , user);
+         history.push("/login");
+      }
+      catch(err) {
+        console.log(err);
+      }
+    }
+  };
+
+
   return (
     <div className="register">
       <div className="rWrap">
@@ -9,16 +40,16 @@ function Register() {
           <span className="rDescription">Facebook Like App let's you connect with your friends and the whole world</span>
         </div>
         <div className="rRight">
-          <div className="rBox">
-            <input placeholder="Username" className="rInput" />
-            <input placeholder="Email" className="rInput" />
-            <input placeholder="Password" className="rInput" />
-            <input placeholder="Confirm Password" className="rInput" />
-            <button className="rButton">Sign Up</button>
+          <form className="rBox" onSubmit={handleClick}>
+            <input placeholder="Username" required ref={username} className="rInput" />
+            <input placeholder="Email" required ref={email} className="rInput" type="email" />
+            <input placeholder="Password" required ref={password} className="rInput" type="password"  minLength="8" />
+            <input placeholder="Confirm Password" required ref={passwordAgain} className="rInput" type="password" />
+            <button className="rButton" type="submit">Sign Up</button>
             <button className="RegButton">
               Log into Account
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>

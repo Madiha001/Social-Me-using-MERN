@@ -2,8 +2,12 @@ import "./topbar.css";
 import { AiOutlineSearch, AiOutlineWechat } from 'react-icons/ai';
 import {MdNotifications, MdPerson} from 'react-icons/md';
 import {Link} from 'react-router-dom';
+import { useContext } from "react";
+import { AuthContext } from '../../context/AuthContext';
 
 export default function Topbar(){
+    const {user} = useContext(AuthContext);
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     return(
         <div className="tbContainer">
             <div className="tbLeft">
@@ -37,7 +41,10 @@ export default function Topbar(){
                         <span className="tbIconBadge">3</span>
                     </div>
                 </div>
-                <img src="/icons/person/1.jpeg" className="tbimage"/>
+                <Link to={`/profile/${user.username}`}>
+                    <img src={user.profilePicture ? PF+user.profilePicture : PF+"person/noAvatar.png"} alt="" className="tbimage"/>
+                </Link>
+                
             </div>
         </div>
     )
