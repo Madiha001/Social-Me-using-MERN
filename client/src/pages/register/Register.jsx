@@ -12,7 +12,7 @@ function Register() {
 
   const handleClick = async (e) => {
     e.preventDefault();
-    if(passwordAgain.current.value !== password.current.value){
+    if(passwordAgain.current.value != password.current.value){
       passwordAgain.current.setCustomValidity("Passwords dont match");
     }
     else{
@@ -23,7 +23,7 @@ function Register() {
       };
       try{
          await axios.post("/auth/register" , user);
-         history.push("/login");
+         history("/login");
       }
       catch(err) {
         console.log(err);

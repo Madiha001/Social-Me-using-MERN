@@ -10,7 +10,7 @@ export default function Rightbar({user}){
             <div className="bdayContainer">
                     <img className='bdayImg' src="gift.png" alt="" />
                     <span className="bdayMsg">
-                        <b>A </b> and <b>2 other friends</b> have birthday today
+                        <b>Madiha </b> and <b>2 other friends</b> have birthday today
                     </span>
                 </div>
                 <img className="rbAd" src="ad.jpg" alt="" />
@@ -56,23 +56,23 @@ export default function Rightbar({user}){
                 </div>
                 <div className="rbFollowing">
                     <img src={`${PF}person/2.jpeg`} alt="" className="rbFollowingImg" /> 
-                    <span className="rbFollowingName">Naneeta</span>
+                    <span className="rbFollowingName">Depeeka</span>
                 </div>
                 <div className="rbFollowing">
                     <img src={`${PF}person/3.jpeg`} alt="" className="rbFollowingImg" /> 
-                    <span className="rbFollowingName">Naneeta</span>
+                    <span className="rbFollowingName">Vanshika</span>
                 </div>
                 <div className="rbFollowing">
                     <img src={`${PF}person/4.jpeg`} alt="" className="rbFollowingImg" /> 
-                    <span className="rbFollowingName">Naneeta</span>
+                    <span className="rbFollowingName">Aqsa</span>
                 </div>
                 <div className="rbFollowing">
                     <img src={`${PF}person/5.jpeg`} alt="" className="rbFollowingImg" /> 
-                    <span className="rbFollowingName">Naneeta</span>
+                    <span className="rbFollowingName">Ali Hamza</span>
                 </div>
                 <div className="rbFollowing">
                     <img src={`${PF}person/6.jpeg`} alt="" className="rbFollowingImg" /> 
-                    <span className="rbFollowingName">Naneeta</span>
+                    <span className="rbFollowingName">Shaharyar</span>
                 </div>
             </div>
             </>
